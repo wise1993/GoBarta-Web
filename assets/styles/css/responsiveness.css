@@ -1,3 +1,9 @@
+@media (max-width: 414px) {
+    .welcome-t {
+        font-size: 37px;
+    }
+}
+
 @media only screen and (min-width: 260px) and (max-width: 720px) {
     .cid-s48OLK6784 .dropdown-menu,
     .cid-s48OLK6784 .navbar.opened {
