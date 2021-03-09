@@ -893,11 +893,15 @@ blockquote {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .item-bg {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (min-width: 768px) {
   .container-fluid {
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 8em;
+    padding-right: 8em;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {

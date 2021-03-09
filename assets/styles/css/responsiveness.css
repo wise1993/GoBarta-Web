@@ -1,10 +1,17 @@
-@media (max-width: 414px) {
-    .welcome-t {
-        font-size: 37px;
-    }
+@font-face {
+    font-family: DM Sans;
+    src: url('./../../fonts/DM_Sans/DMSans-Regular.ttf');
 }
 
+
 @media only screen and (min-width: 260px) and (max-width: 720px) {
+    .cid-s48OLK6784 .navbar.navbar-short .navbar-logo img {
+        height: 1em !important;
+    }
+    .contRes {
+        padding-left: 1.7em;
+        padding-right: 1.7em;
+    }
     .cid-s48OLK6784 .dropdown-menu,
     .cid-s48OLK6784 .navbar.opened {
         background: #1C1F26 !important;
@@ -38,15 +45,44 @@
     }
     .textLeft h3 {
         font-size: 12px;
+        letter-spacing: 0.75px;
     }
     .textLeft p {
         font-size: 20px;
+        margin-bottom: 0;
     }
     .textRight p {
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 25px;
+        margin-bottom: 0;
+        letter-spacing: -0.25px;
     }
     .feed {
-        font-size: 17px;
+        padding-right: 8em;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.25px;
+        color: #858585;
+    }
+    .workStyle {
+        font-family: Vickey;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        letter-spacing: -0.01em;
+        color: #002314;
+        margin-bottom: 1em !important;
+    }
+    .pStyle {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 21px;
+        letter-spacing: -0.25px;
+        color: #858585;
+        opacity: 0.8;
     }
     .scroll-down {
         width: 100px;
@@ -55,6 +91,12 @@
     }
     .textLeft {
         padding-left: 0;
+    }
+
+    .lineCurve1 {
+        width: 50%;
+        margin: auto;
+        margin-left: 0px;
     }
 
     .workContent {
@@ -73,7 +115,24 @@
         display: -webkit-box;
         flex-wrap: wrap;
     }
+    .edit span, p {
+        word-break: break-word;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.25px;
+        color: #858585;
+    }
 
+    .form-control {
+        font-size: 12px;
+    }
+    .btnEdit {
+        font-size: 12px;
+        left: -10px;
+    }
     .createBtn {
         background-color: #00D57C !important;
         border-color: #00D57C !important;
@@ -91,24 +150,24 @@
         width: 50%;
     }
     .dwn {
+        margin-bottom: 15px !important;
+        margin-top: 15px;
         font-family: Vickey;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
-        line-height: 31px;
+        line-height: 35px;
         text-align: center;
         letter-spacing: -0.01em;
         color: #00D57C;
-        width: 52%;
-        margin: auto;
-        margin-bottom: 10px !important;
-        margin-top: 10px;
+        width: 80%;
     }
     .lineCurve {
-        width: 50%;
+        width: 44%;
+        margin-top: -8px;
     }
     .cid-s48udlf8KU {
-        z-index: 999;
+        z-index: 999 !important;
     }
     .cid-s48udlf8KU {
         background-image: url('./../../images/mock-mobile.svg');
@@ -136,9 +195,40 @@
         font-size: 16px;
     }
     .cid-sqNrJQ83lt {
+        padding-top: 3rem;
         padding-bottom: 1rem;
     }
     .cid-sqNrJQ83lt .soc-item {
         margin-top: 0;
+    }
+    .welcome-t {
+        font-family: Vickey;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 136.8%;
+        letter-spacing: -0.01em;
+        color: #002314;
+        padding-right: 5em;
+    }
+    .search-btm {
+        width: 100%;
+        margin: auto;
+    }
+    .cid-sqNAm61Huu {
+        padding-bottom: 4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .welcome-t {
+        font-family: Vickey;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 136.8%;
+        letter-spacing: -0.01em;
+        color: #002314;
+        padding-right: 3em;
     }
 }
