@@ -3,6 +3,24 @@
     src: url('./../../fonts/DM_Sans/DMSans-Regular.ttf');
 }
 
+@media (max-width: 1440px) {
+    .welcome-t {
+        padding-right: 1em;
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    .searchWrap {
+        width: 80%;
+    }
+    .lineCurve1 {
+        width: 50%;
+        margin: auto;
+        margin-left: 0px;
+    }
+    
+}
 
 @media only screen and (min-width: 260px) and (max-width: 720px) {
     .cid-s48OLK6784 .navbar.navbar-short .navbar-logo img {
@@ -227,17 +245,6 @@
     }
 }
 
-@media (max-width: 320px) { 
-    .form-control {
-        font-size: 10px;
-        min-height: 30px;
-    }
-    .btnEdit {
-        font-size: 8px;
-        left: -10px;
-    }
-}
-
 @media (max-width: 375px) {
     .form-control {
         font-size: 10px;
@@ -255,5 +262,21 @@
         letter-spacing: -0.01em;
         color: #002314;
         padding-right: 3em;
+    }
+}
+
+@media (max-width: 320px) {
+    .form-control {
+        font-size: 10px;
+        min-height: 30px;
+    }
+
+    .btnEdit {
+        font-size: 8px;
+        left: -10px;
+    }
+
+    .welcome-t {
+        padding-right: 1em;
     }
 }
