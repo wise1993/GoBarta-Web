@@ -103,9 +103,10 @@ body {
   width: 40px;
   height: 42px;
 }
+/* Scroll down */
 .scroll-down {
   box-shadow: 0 0 0 0 rgba(255, 255, 255, .1); 
-  -webkit-animation: sdb03 3s infinite;
+  -webkit-animation: sdb04 3s infinite;
   animation: sdb04 5s infinite;
 }
 
@@ -136,7 +137,7 @@ body {
     transform: rotate(-45deg) translate(0, 0);
   }
 }
-
+/* Scroll down end */
 .play-btn {
   background: #212B4B;
   border-radius: 4px;

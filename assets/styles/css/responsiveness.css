@@ -227,7 +227,25 @@
     }
 }
 
+@media (max-width: 320px) { 
+    .form-control {
+        font-size: 10px;
+        min-height: 30px;
+    }
+    .btnEdit {
+        font-size: 8px;
+        left: -10px;
+    }
+}
+
 @media (max-width: 375px) {
+    .form-control {
+        font-size: 10px;
+    }
+    .btnEdit {
+        font-size: 10px;
+        left: -15px;
+    }
     .welcome-t {
         font-family: Vickey;
         font-style: normal;
