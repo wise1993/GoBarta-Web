@@ -99,6 +99,10 @@ body {
 .pad-img {
   padding-right: 0 !important;
 }
+.pad-img > img {
+  width: 40px;
+  height: 42px;
+}
 .scroll-down {
   box-shadow: 0 0 0 0 rgba(255, 255, 255, .1); 
   -webkit-animation: sdb03 3s infinite;
@@ -204,6 +208,7 @@ body {
   color: #EDF1F5;
 }
 .feed {
+    width: 65%;
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
@@ -212,6 +217,8 @@ body {
     letter-spacing: -1px;
     color: #858585;
     text-align: left;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 .contStack {
     width: 100%;
@@ -261,11 +268,13 @@ body {
   line-height: 50px;
   letter-spacing: -0.01em;
   color: #002314;
+  margin-bottom: 1.3em !important;
 }
 .workStyle b {
     color: #00D57C
 }
 .pStyle {
+  width: 749px;
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
@@ -273,6 +282,7 @@ body {
   line-height: 29px;
   letter-spacing: -1px;
   color: #858585;
+  margin-bottom: 2.4em !important;
 }
 
 .work-rw h2 {
@@ -863,6 +873,9 @@ a:hover {
 .scrollToTop_wraper {
   display: none;
 }
+.searchWrap {
+  width: 80%;
+}
 .btnEdit {
   margin: 0;
   background: #00D57C;
@@ -880,6 +893,7 @@ a:hover {
   z-index: 999 !important;
   visibility: visible;
   left: -15px;
+  border-color: transparent;
 }
 .form-control {
   background: #FBFBFC;
@@ -902,7 +916,7 @@ a:hover {
 .form-control:hover,
 .form-control:focus {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
-  border-color: #212b4b !important;
+  /* border-color: #212b4b !important; */
 }
 .form-control:-webkit-input-placeholder {
   font-family: DM Sans;

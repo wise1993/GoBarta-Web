@@ -30,6 +30,10 @@
         background-position: center;
     }
 
+    .searchWrap {
+        width: 100%;
+    }
+
     .contStack {
         width: 100%;
         margin: auto;
@@ -58,6 +62,7 @@
         letter-spacing: -0.25px;
     }
     .feed {
+        width: 100%;
         padding-right: 8em;
         font-size: 12px;
         line-height: 16px;
@@ -75,6 +80,7 @@
         margin-bottom: 1em !important;
     }
     .pStyle {
+        width: 100%;
         font-family: DM Sans;
         font-style: normal;
         font-weight: normal;
@@ -128,6 +134,7 @@
 
     .form-control {
         font-size: 12px;
+        min-height: 40px;
     }
     .btnEdit {
         font-size: 12px;
@@ -192,7 +199,7 @@
         margin-top: 0;
     }
     .work-rw h4 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .cid-sqNrJQ83lt {
         padding-top: 3rem;
@@ -209,7 +216,7 @@
         line-height: 136.8%;
         letter-spacing: -0.01em;
         color: #002314;
-        padding-right: 5em;
+        padding-right: 4em;
     }
     .search-btm {
         width: 100%;
