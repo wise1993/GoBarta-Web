@@ -221,7 +221,7 @@ body {
     margin-bottom: 2em;
 }
 .contStack {
-    width: 100%;
+    width: 90%;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -254,7 +254,7 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
     letter-spacing: -1px;
     color: #D4DAD7;
     text-align: left;
@@ -897,10 +897,9 @@ a:hover {
 }
 .form-control {
   background: #FBFBFC;
-  border: 1px solid #E4E9F2 !important;
+  /* border: 1px solid #E4E9F2 !important; */
   box-sizing: border-box;
   border-radius: 10px !important;
-  /* height: 50px; */
   font-family: DM Sans;
   font-style: normal;
   font-weight: normal;
