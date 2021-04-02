@@ -44,7 +44,9 @@
     }
 
     .mockBg {
-        height: 40vh;
+        width: 90%;
+        margin: auto;
+        height: 55vh;
         background-position: center;
     }
 
@@ -81,9 +83,9 @@
     }
     .feed {
         width: 100%;
-        padding-right: 8em;
-        font-size: 12px;
-        line-height: 16px;
+        padding-right: 0em;
+        font-size: 18px;
+        line-height: 21px;
         letter-spacing: -0.25px;
         color: #858585;
     }
@@ -151,12 +153,12 @@
     }
 
     .form-control {
-        font-size: 12px;
-        min-height: 40px;
+        font-size: 13px;
+        min-height: 54px;
     }
     .btnEdit {
-        font-size: 12px;
-        left: -15px;
+        font-size: 13px;
+        left: -3px;
     }
     .createBtn {
         background-color: #00D57C !important;
@@ -172,7 +174,8 @@
         align-items: center;
         text-align: center;
         letter-spacing: -0.75px;
-        width: 50%;
+        width: 60%;
+        margin-left: 5px
     }
     .dwn {
         margin-bottom: 15px !important;
@@ -230,11 +233,11 @@
         font-family: Vickey;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 26px;
         line-height: 136.8%;
         letter-spacing: -0.01em;
         color: #002314;
-        padding-right: 4em;
+        padding-right: 1em;
     }
     .search-btm {
         width: 100%;
@@ -247,21 +250,21 @@
 
 @media (max-width: 375px) {
     .form-control {
-        font-size: 10px;
+        font-size: 12px;
     }
     .btnEdit {
-        font-size: 10px;
-        left: -15px;
+        font-size: 12px;
+        left: -5px;
     }
     .welcome-t {
         font-family: Vickey;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 26px;
         line-height: 136.8%;
         letter-spacing: -0.01em;
         color: #002314;
-        padding-right: 3em;
+        padding-right: 0em;
     }
 }
 

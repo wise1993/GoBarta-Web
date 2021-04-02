@@ -17,7 +17,9 @@ body {
   font-family: DM Sans;
 }
 .mockBg {
-  height: min-content;
+  /* height: min-content; */
+  height: 100%;
+  max-height: 680px;
 }
 .display-1 {
   font-family: DM Sans;
@@ -1016,7 +1018,8 @@ a {
 }
 @media (max-width: 991px) {
   .cid-sqNmh50pWP .image-wrapper {
-    padding: 1rem;
+   padding: 0rem;
+   max-height: 50vh;
   }
 }
 @media (min-width: 992px) {
@@ -1192,7 +1195,7 @@ a {
 }
 .cid-s48OLK6784 .nav-dropdown .link {
     padding: 0 0.3em !important;
-    margin: 0.667em 1.5em !important;
+    margin: 0.667em 0em !important;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
