@@ -346,8 +346,8 @@ body {
     line-height: calc( 1.4 * (1.42rem + (2.2 - 1.42) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-7 {
-    font-size: 0.96rem;
-    font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20)));
+    font-size: 24px;
+    /* font-size: calc( 1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))); */
     line-height: calc( 1.4 * (1.07rem + (1.2 - 1.07) * ((100vw - 20rem) / (48 - 20))));
   }
 }
@@ -1146,12 +1146,11 @@ a {
 @media (max-width: 991px) {
   .cid-sqNrJQ83lt div > *:last-child {
     margin-top: 0px !important;
-    /* margin-bottom: 0rem !important; */
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 21px;
     letter-spacing: -0.25px;
     color: #858585;
   }

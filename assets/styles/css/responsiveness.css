@@ -68,15 +68,15 @@
         text-align: left;
     }
     .textLeft h3 {
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0.75px;
     }
     .textLeft p {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 0;
     }
     .textRight p {
-        font-size: 12px;
+        font-size: 15px;
         line-height: 25px;
         margin-bottom: 0;
         letter-spacing: -0.25px;
@@ -93,7 +93,7 @@
         font-family: Vickey;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 50px;
         letter-spacing: -0.01em;
         color: #002314;
@@ -104,8 +104,8 @@
         font-family: DM Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 21px;
+        font-size: 16px;
+        line-height: 25px;
         letter-spacing: -0.25px;
         color: #858585;
         opacity: 0.8;
@@ -146,7 +146,7 @@
         font-family: DM Sans;
         font-style: normal;
         font-weight: normal;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 16px;
         letter-spacing: -0.25px;
         color: #858585;
@@ -158,7 +158,7 @@
     }
     .btnEdit {
         font-size: 13px;
-        left: -3px;
+        left: -15px;
     }
     .createBtn {
         background-color: #00D57C !important;
@@ -216,11 +216,11 @@
         width: 65%;
     }
     .work-rw h2 {
-        font-size: 18px;
+        font-size: 22px;
         margin-top: 0;
     }
     .work-rw h4 {
-        font-size: 14px;
+        font-size: 16px;
     }
     .cid-sqNrJQ83lt {
         padding-top: 3rem;
@@ -237,7 +237,7 @@
         line-height: 136.8%;
         letter-spacing: -0.01em;
         color: #002314;
-        padding-right: 1em;
+        padding-right: 0em;
     }
     .search-btm {
         width: 100%;
@@ -254,7 +254,7 @@
     }
     .btnEdit {
         font-size: 12px;
-        left: -5px;
+        left: -15px;
     }
     .welcome-t {
         font-family: Vickey;
