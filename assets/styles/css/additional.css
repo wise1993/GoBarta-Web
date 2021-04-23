@@ -298,13 +298,13 @@ body {
   color: #1C1F26;
 }
 .work-rw h4 {
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 26px;
-      letter-spacing: -1px;
-      color: #858585;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: #858585;
 }
 .workContent {
   margin: 0em 0em 0em 30%;
@@ -315,6 +315,44 @@ body {
   margin: 0em 0em 0em 30%;
   padding-right: 0em;
 }
+
+.mailWrap {
+  text-align: left;
+  margin-bottom: 2em;
+  background: #B6F3D9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 72%;
+}
+
+.mailWrap>img {
+  width: 20px;
+  display: inline-block;
+}
+
+.mailWrap-1 {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 1em;
+  width: 50%;
+  background: #B6F3D9;
+  border-radius: 10px;
+  padding: 10px;
+}
+.mailWrap-1>img {
+  width: 20px;
+  display: inline-block;
+}
+
+.mailCss {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: #006A3E;
+}
+
 /* ---- Fluid typography for mobile devices ---- */
 /* 1.4 - font scale ratio ( bootstrap == 1.42857 ) */
 /* 100vw - current viewport width */

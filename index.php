@@ -1,3 +1,25 @@
+<?php
+    $emailErr = '';
+    if(isset($_POST['signup'])) {
+        $emailErr = '';
+       $email = $_POST["email"];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          $emailErr = "Invalid email format";
+           header("refresh: 5"); 
+        }else{
+
+            $user_mail = $email;
+            $myfile = fopen("emaildoc.txt", "a") or die("Unable to open file!");
+            $txt = $user_mail."\n";
+            fwrite($myfile, $txt);
+            fclose($myfile);
+            $emailErr = 'Yay! You’re now on our early access list. '.$user_mail;
+            header("refresh: 5"); 
+        }
+         
+    }
+?>
+
 <html>
 
 <head>
@@ -28,7 +50,7 @@
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <span class="navbar-logo">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="GoBarta Logo" style="height: 1.8rem;">
                         </a>
                     </span>
@@ -43,21 +65,24 @@
                         <span class="four"></span>
                     </div>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true" sty>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="#info2-p">About</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="#content1-8">How it
-                                works</a>
-                        </li>
-                    </ul>
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true" sty>
+                            <li class="nav-item"><a class="nav-link link text-black display-4"
+                                    href="index.php">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link text-black display-4" href="#info2-p">About</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link text-black display-4" href="#content1-8">How it
+                                    works</a>
+                            </li>
+                        </ul>
 
-                    <div class="navbar-buttons mbr-section-btn">
-                        <a class="btn btn-primary createBtn display-4" href="#social">Sign up for early access</a>
+                        <div class="navbar-buttons mbr-section-btn">
+                            <a class="btn btn-primary createBtn display-4" href="#social">Sign up for early access</a>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </nav>
     </section>
@@ -77,14 +102,17 @@
                         </h1>
                         <p class="mbr-text mbr-fonts-style feed">
                             Our feed is filled with listed items by various people all over the country.</p>
-                        <form action="config.php" method="post">
+                        <form name="myForm" action=""  method="post">
+                            <div class="mailWrap">
+                                <img src="./assets/images/success-icon.png">
+                                <span id="error-email" class="mailCss"> <?php echo($emailErr); ?></span>
+                            </div>
                             <div class="input-group mb-3 searchWrap">
-                                <span><?php echo $email_error; ?></span>
                                 <input type="text" placeholder="Input your email address" class="form-control emails"
                                     name='email'>
                                 <div class="input-group-append">
-                                    <input class="btn btn-outline-secondary btnEdit" type="submit" value="Sign up for early
-                                        access">
+                                    <button class="btn btn-outline-secondary btnEdit" type="submit" name="signup">Sign up for early
+                                        access</button>
                                 </div>
                             </div>
                         </form>
@@ -205,14 +233,18 @@
                             <h4 class="card-title mbr-fonts-style align-center mb-4 display-1 dwn">
                                 Be among the first to use it
                             </h4>
-                            <form action="config.php" method="post">
+                            <form name="myForm" action=""  method="post">
+                            <div class="mailWrap-1">
+                                <img src="./assets/images/success-icon.png">
+                                <span id="error-email" class="mailCss"> <?php echo($emailErr); ?></span>
+                            </div>
                                 <div class="input-group mb-3 search-btm">
-                                    <span><?php echo $email_error; ?></span>
                                     <input type="text" placeholder="Input your email address"
                                         class="form-control emails">
                                     <div class="input-group-append">
-                                        <input class="btn btn-outline-secondary btnEdit" type="submit" value="Sign up for early
-                                        access">
+                                        <button class="btn btn-outline-secondary btnEdit" type="submit">Sign up for
+                                            early
+                                            access</button>
                                     </div>
                                 </div>
                             </form>
@@ -230,7 +262,7 @@
             <div class="row mbr-white">
                 <div class="col-6 col-lg-3">
                     <div class="media-wrap col-md-8 col-12">
-                        <a href="index.html">
+                        <a href="index.php">
                             <img src="assets/images/logo.svg" alt="GoBarta" style="width: 80%">
                         </a>
                     </div>
@@ -264,25 +296,25 @@
 
                     <div class="social-row display-7">
                         <div class="soc-item edit">
-                            <a href="#" target="_blank">
+                            <a href="https://www.facebook.com/go.barta" target="_blank">
                                 <img src="./assets/images/facebook.svg">
                             </a>
                         </div>
                         <div class="soc-item edit">
-                            <a href="#" target="_blank">
+                            <a href="https://twitter.com/gobarta1" target="_blank">
                                 <img src="./assets/images/twitter.svg">
                             </a>
                         </div>
                         <div class="soc-item edit">
-                            <a href="#" target="_blank">
+                            <a href="https://www.instagram.com/gobarta_" target="_blank">
                                 <img src="./assets/images/instragram.svg">
                             </a>
                         </div>
-                        <div class="soc-item">
+                        <!-- <div class="soc-item">
                             <a href="#" target="_blank">
                                 <img src="./assets/images/linkdIn.svg">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
