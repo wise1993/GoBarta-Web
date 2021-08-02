@@ -23,6 +23,10 @@
 }
 
 @media only screen and (min-width: 260px) and (max-width: 720px) {
+    .nav-dropdown {
+        margin: 2em 0 2em 0;
+    }
+
     .cid-s48OLK6784 .navbar.navbar-short .navbar-logo img {
         height: 1em !important;
     }
@@ -33,8 +37,8 @@
     .cid-s48OLK6784 .dropdown-menu,
     .cid-s48OLK6784 .navbar.opened {
         background: #1C1F26 !important;
-        padding-top: 4em;
-        padding-bottom: 4em;
+        padding-top: 3em;
+        padding-bottom: 3em;
     }
     .text-black {
         color: #ffffff !important;
@@ -52,9 +56,9 @@
     }
 
     .mockBg {
-        width: 90%;
+        width: 100%;
         margin: auto;
-        height: 55vh;
+        height: 65vh;
         background-position: center;
     }
 
@@ -162,11 +166,11 @@
 
     .form-control {
         font-size: 13px;
-        min-height: 54px;
+        min-height: 40px;
     }
     .btnEdit {
         font-size: 13px;
-        left: -15px;
+        left: -7px;
     }
     .createBtn {
         background-color: #00D57C !important;
@@ -182,7 +186,7 @@
         align-items: center;
         text-align: center;
         letter-spacing: -0.75px;
-        width: 60%;
+        width: 100%;
         margin-left: 5px
     }
     .dwn {
@@ -254,6 +258,33 @@
     .cid-sqNAm61Huu {
         padding-bottom: 4rem;
     }
+
+    .successContainer {
+        text-align: center
+    }
+
+    .error {
+        font-size: 12px;
+    }
+
+    .successMail {
+        font-size: 12px;
+    }
+
+    .entry-title {
+        margin-bottom: 0.3em;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .entry-content h4 {
+        font-size: 16px;
+    }
+
+    .entry-content p {
+        line-height: 20px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -262,7 +293,7 @@
     }
     .btnEdit {
         font-size: 12px;
-        left: -15px;
+        left: -7px;
     }
     .welcome-t {
         font-family: Vickey;
@@ -288,6 +319,7 @@
     }
 
     .welcome-t {
-        padding-right: 1em;
+        padding-right: 0em;
+        font-size: 22px;
     }
 }
